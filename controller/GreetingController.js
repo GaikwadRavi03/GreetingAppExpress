@@ -1,6 +1,13 @@
+let services = require('../services/GreetingServices')
+
 class GreetingController {
     sayHello(req, res, next) {
-        res.send("Welcome in Greeting application");
+        let data = {
+            firstName: req.query.firstName,
+            lastName: req.query.lastName
+        }
+        let result = services.sayHello(data);
+        res.send(result);
     }
 }
 
