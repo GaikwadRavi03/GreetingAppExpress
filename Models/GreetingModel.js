@@ -26,6 +26,21 @@ class GreetingModel {
             })
         })
     }
+
+    read(req) {
+        let response = {success: true}
+        return new Promise((resolve, reject) => {
+            greetingModel.find({_id:req.id}).then(message => {
+                response.success = true,
+                    response.message = message
+                resolve(response);
+            }).catch((error) => {
+                response.success = false,
+                    response.message = error
+                reject(response);
+            })
+        })
+    }
 }
 
 module.exports = new GreetingModel();

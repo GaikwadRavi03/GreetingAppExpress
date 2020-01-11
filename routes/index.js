@@ -3,5 +3,7 @@ var router = express.Router();
 let controller = require('../controller/GreetingController')
 
 /* GET home page. */
-router.get('/greeting', controller.sayHello);
+router.post('/greeting', controller.sayHello);
+router.get('/greeting/getById/:id', controller.findGreetingMessage);
 module.exports = router;
+

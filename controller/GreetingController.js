@@ -12,6 +12,17 @@ class GreetingController {
             res.send(err)
         })
     }
+
+    findGreetingMessage(req, res){
+        let data = {
+            id : req.params.id
+        }
+        services.findById(data).then(data => {
+            res.send(data);
+        }).catch((err)=>{
+            res.send(err)
+        })
+    }
 }
 
 module.exports = new GreetingController();

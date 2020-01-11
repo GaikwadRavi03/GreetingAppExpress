@@ -29,6 +29,12 @@ class GreetingServices {
             })
         }
     }
+
+    findById(userId) {
+        return model.read(userId).then(ans => {
+            return ans;
+        })
+    }
 }
 
 module.exports = new GreetingServices();
