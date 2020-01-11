@@ -6,8 +6,11 @@ class GreetingController {
             firstName: req.query.firstName,
             lastName: req.query.lastName
         }
-        let result = services.sayHello(data);
-        res.send(result);
+        services.sayHello(data).then(data => {
+            res.send(data);
+        }).catch((err)=>{
+            res.send(err)
+        })
     }
 }
 

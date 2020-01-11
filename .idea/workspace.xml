@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3816015-8839-4e27-a4b9-b539ba4de8d5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Config/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Config/dataBasesConnection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/GreetingModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/GreetingController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/GreetingController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/GreetingServices.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/GreetingServices.js" afterDir="false" />
     </list>
@@ -30,6 +36,12 @@
     <property name="javascript.nodejs.core.library.configured.version" value="10.16.3" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Models" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -54,7 +66,9 @@
       <option name="presentableId" value="Default" />
       <updated>1578553830869</updated>
       <workItem from="1578553835207" duration="6679000" />
-      <workItem from="1578629242621" duration="9722000" />
+      <workItem from="1578629242621" duration="10437000" />
+      <workItem from="1578666652147" duration="2764000" />
+      <workItem from="1578716178242" duration="5473000" />
     </task>
     <servers />
   </component>
@@ -62,29 +76,37 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1253" height="171" key="GridCell.Tab.0.bottom" timestamp="1578663656470">
+    <state x="311" y="58" width="800" height="677" key="#Inspections" timestamp="1578667256744">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="171" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1578663656470" />
-    <state width="1253" height="171" key="GridCell.Tab.0.center" timestamp="1578663656469">
+    <state x="311" y="58" width="800" height="677" key="#Inspections/67.27.1299.741@67.27.1299.741" timestamp="1578667256744" />
+    <state width="1253" height="143" key="GridCell.Tab.0.bottom" timestamp="1578722043764">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="171" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1578663656469" />
-    <state width="1253" height="171" key="GridCell.Tab.0.left" timestamp="1578663656468">
+    <state width="1253" height="143" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1578722043764" />
+    <state width="1253" height="143" key="GridCell.Tab.0.center" timestamp="1578722043762">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="171" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1578663656468" />
-    <state width="1253" height="171" key="GridCell.Tab.0.right" timestamp="1578663656469">
+    <state width="1253" height="143" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1578722043762" />
+    <state width="1253" height="143" key="GridCell.Tab.0.left" timestamp="1578722043760">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="171" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1578663656469" />
-    <state x="372" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1578629241015">
+    <state width="1253" height="143" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1578722043760" />
+    <state width="1253" height="143" key="GridCell.Tab.0.right" timestamp="1578722043763">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="372" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1578629241015" />
+    <state width="1253" height="143" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1578722043763" />
+    <state x="372" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1578716179804">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="372" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1578716179804" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1578663495912">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state width="600" height="424" key="javadoc.popup/67.27.1299.741@67.27.1299.741" timestamp="1578663495912" />
+    <state x="67" y="123" width="1289" height="547" key="new project wizard" timestamp="1578666786757">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="67" y="123" width="1289" height="547" key="new project wizard/67.27.1299.741@67.27.1299.741" timestamp="1578666786757" />
   </component>
 </project>

@@ -3,5 +3,5 @@ var router = express.Router();
 let controller = require('../controller/GreetingController')
 
 /* GET home page. */
-router.get('/helloWorldServices', controller.sayHello);
+router.get('/greeting', controller.sayHello);
 module.exports = router;

@@ -1,11 +1,32 @@
+let model = require('../Models/GreetingModel')
+
 class GreetingServices {
-    sayHello(require) {
-        if (require.firstName == undefined && require.lastName == undefined) {
-            return `Hello Welcome in Greeting application.`
-        } else if (require.lastName == undefined) {
-            return `Hello ${require.firstName} Welcome in Greeting application.`
+    sayHello(user) {
+        let data
+        if (user.firstName == undefined && user.lastName == undefined) {
+            data = {
+                'name': 'unknown',
+                'message': `Hello Welcome in Greeting application.`
+            }
+            return model.create(data).then(ans => {
+                return ans;
+            })
+        } else if (user.lastName == undefined) {
+            data = {
+                'name': user.firstName,
+                'message': `Hello ${user.firstName} Welcome in Greeting application.`
+            }
+            return model.create(data).then(ans => {
+                return ans;
+            })
         } else {
-            return `Hello ${require.firstName} ${require.lastName} Welcome in Greeting application.`
+            data = {
+                'name': user.firstName,
+                'message': `Hello ${user.firstName} ${user.lastName} Welcome in Greeting application.`
+            }
+            return model.create(data).then(ans => {
+                return ans;
+            })
         }
     }
 }
