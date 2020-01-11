@@ -31,7 +31,7 @@ class GreetingServices {
     }
 
     findById(userId) {
-        let id={
+        let id = {
             _id: userId.id
         }
         return model.read(id).then(ans => {
@@ -39,9 +39,19 @@ class GreetingServices {
         })
     }
 
-    findAllData(){
-        let id={}
+    findAllData() {
+        let id = {}
         return model.read(id).then(ans => {
+            return ans;
+        })
+    }
+
+    editById(req) {
+        let data = {
+            _id: req.id,
+            message: req.message
+        }
+        return model.update(data).then(ans => {
             return ans;
         })
     }

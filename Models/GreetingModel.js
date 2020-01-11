@@ -41,6 +41,25 @@ class GreetingModel {
             })
         })
     }
+
+    update(req) {
+        let response = {success: true}
+        console.log('in model', req)
+        return new Promise((resolve, reject) => {
+            greetingModel.findOneAndUpdate({_id: req._id},
+                {
+                    message: req.message
+                }).then(message => {
+                response.success = true,
+                    response.message = message
+                resolve(response);
+            }).catch((error) => {
+                response.success = false,
+                    response.message = error
+                reject(response);
+            })
+        })
+    }
 }
 
 module.exports = new GreetingModel();

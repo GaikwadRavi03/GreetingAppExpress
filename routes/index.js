@@ -6,5 +6,5 @@ let controller = require('../controller/GreetingController')
 router.post('/greeting', controller.sayHello);
 router.get('/greeting/getById/:id', controller.findGreetingMessage);
 router.get('/greeting/getAll', controller.findAllGreetingMessage);
+router.put('/greeting/editById/:id', controller.editGreetingMessage);
 module.exports = router;
-
