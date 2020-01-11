@@ -55,6 +55,15 @@ class GreetingServices {
             return ans;
         })
     }
+
+    deleteById(req){
+        let data = {
+            _id: req.id
+        }
+        return model.delete(data).then(ans => {
+            return ans;
+        })
+    }
 }
 
 module.exports = new GreetingServices();

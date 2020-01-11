@@ -43,6 +43,17 @@ class GreetingController {
             res.send(err)
         })
     }
+
+    deleteGreetingMessage(req, res) {
+        let data = {
+            id: req.params.id
+        }
+        services.deleteById(data).then(data => {
+            res.send(data);
+        }).catch((err) => {
+            res.send(err)
+        })
+    }
 }
 
 module.exports = new GreetingController();
