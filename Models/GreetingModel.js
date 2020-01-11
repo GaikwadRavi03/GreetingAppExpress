@@ -30,7 +30,7 @@ class GreetingModel {
     read(req) {
         let response = {success: true}
         return new Promise((resolve, reject) => {
-            greetingModel.find({_id:req.id}).then(message => {
+            greetingModel.find(req).then(message => {
                 response.success = true,
                     response.message = message
                 resolve(response);

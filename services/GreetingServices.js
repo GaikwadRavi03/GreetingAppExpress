@@ -31,7 +31,17 @@ class GreetingServices {
     }
 
     findById(userId) {
-        return model.read(userId).then(ans => {
+        let id={
+            _id: userId.id
+        }
+        return model.read(id).then(ans => {
+            return ans;
+        })
+    }
+
+    findAllData(){
+        let id={}
+        return model.read(id).then(ans => {
             return ans;
         })
     }

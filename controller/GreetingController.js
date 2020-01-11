@@ -23,6 +23,14 @@ class GreetingController {
             res.send(err)
         })
     }
+
+    findAllGreetingMessage(req,res){
+        services.findAllData().then(data => {
+            res.send(data);
+        }).catch((err)=>{
+            res.send(err)
+        })
+    }
 }
 
 module.exports = new GreetingController();
